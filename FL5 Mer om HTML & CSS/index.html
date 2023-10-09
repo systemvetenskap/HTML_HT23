@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <title>Star Wars - The Mandalorian</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-sclae=1.0">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/74e6607f1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header>
+        <img src="img/swlogo.png" alt="Star Wars" class="biglogo">
+        <p>Den här sidan handlar om Star Wars figuren "The Mandalorian"</p>
+    </header>
+
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img src="img/swlogo.png" alt="Star Wars" width="120" height="60"></a>
+        </div>
+
+        <div class="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <ul class="navigation">
+            <li><a href="index.html">HEM</a></li>
+            <li><a href="#">EPISODE I</a></li>
+            <li><a href="#">EPISODE II</a></li>
+            <li><a href="#">EPISODE III</a></li>
+            <li><a href="#">EPISODE IV</a></li>
+            <li><a href="#">EPISODE V</a></li>
+            <li><a href="#">EPISODE VI</a></li>
+            <li><a href="gallery.html">BILDGALLERI</a></li>
+            <li><a href="contact.html">KONTAKTA OSS</a></li>
+        </ul>
+
+        <div class="searchbar">
+            <form action="searchbar">
+                <input type="text" placeholder="Sök..." name="search">
+            </form>
+        </div>
+
+    </nav>
+
+    <div class="flex-container">
+
+        <div class="flex-item vertical">
+            <h3>Stra Wars: Episode I - The Mandalorian </h3>
+            <h4>12 november 2019</h4>
+            <a href="img/s1e1.jpg" target="_blank"><img src="img/s1e1.jpg" alt="The Mandalorian Episode I" class="image"></a>
+            <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Läs mer....</button>
+        </div>
+
+        <div class="flex-item vertical">
+            <h3>Stra Wars: Episode II - The Child </h3>
+            <h4>15 november 2019</h4>
+            <a href="img/s1e2.jpg" target="_blank"><img src="img/s1e2.jpg" alt="The Mandalorian Episode II" class="image"></a>
+            <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Läs mer....</button>
+        </div>
+
+        <div class="flex-item vertical">
+            <h3>Stra Wars: Episode III - The Sin </h3>
+            <h4>22 november 2019</h4>
+            <a href="img/s1e3.jpg" target="_blank"><img src="img/s1e3.jpg" alt="The Mandalorian Episode III" class="image"></a>
+            <p>Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.</p>
+            <button class="btn">Läs mer....</button>
+        </div>
+
+        <div class="flex-item horizontal-left">
+            <h2>Flex Item 4</h2>
+        </div>
+
+        <div class="flex-item horizontal-right">
+            <h2>Flex Item 5</h2>
+        </div>
+
+    </div>
+    
+    <footer>
+        <p> © Lucasfilm Ltd. All Rights Reserved</p>
+        <P>Episode I | Episode II | Episode III | Episode IV | Episode V | Episode VI |</P>
+
+        <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+
+    </footer>
+
+    <script>
+		function hamburgermenuToogle() {
+		const navs = document.querySelectorAll('.navigation')
+
+		navs.forEach(nav => nav.classList.toggle('nav-toggle'));
+		}
+		document.querySelector('.hamburger')
+		.addEventListener('click', hamburgermenuToogle);
+	</script>
+    
+</body>
+
+</html>

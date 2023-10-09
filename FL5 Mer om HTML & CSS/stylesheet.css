@@ -1,0 +1,317 @@
+*{
+    box-sizing: border-box;
+    margin: 0;padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #26313c;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    background-image: url('img/mandaheader.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header h1{
+    font-size: 60px;
+}
+
+nav{
+    display: flex;
+    background-color: #0D0F13;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    padding-left: 10px;
+    color:white;
+}
+
+.searchbar{
+    display: none;
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: yellow;
+    font-weight: bold;
+}
+
+.navigation a:hover{
+    color:deepskyblue;
+}
+
+.biglogo{
+    height: 150px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.image{
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+
+.image:hover{
+    opacity: 0.3;
+}
+
+.flex-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #191D26;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.flex-item{
+    background-color: #1C2230 ;
+    padding: 10px;
+    margin: 20px;
+}
+
+.flex-item h3, h4, p{
+    padding: 10px;
+}
+
+.vertical{
+    width: 30%;
+}
+
+.horizontal-left{
+    width: 60%;
+    height: 300px;
+}
+
+.horizontal-right{
+    width: 34%;
+    height: 300px;
+}
+
+h4 {
+    color:yellow
+}
+
+footer{
+    background-color: #0D0F13;
+    color:white;
+    text-align: center;
+    padding: 20px;
+}
+
+.btn{
+    background-color: orange;
+    width: 150px;
+    color:black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover{
+    background-color: white;
+}
+
+/* Styling för kontaktsidan */
+
+input[type=text], select, textarea{
+    width: 100%;
+    margin:10px;
+    padding: 15px;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-family: arial;
+    font-size: 16px;
+}
+
+input[type=submit]{
+    width: 100%;
+    background-color: green;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.container{
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.contactform {
+    background-color: #F7F7F7;
+    padding: 20px;
+}
+
+input[type=submit]:hover{
+    background-color: darkgreen;
+}
+
+nav input[type=text]{
+    font-size: 18px;
+    border: none;
+    margin: 0;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.social-media{
+    font-size: 50px;
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.col{
+    flex: 25%;
+    max-width: 25%;
+    padding: 5px;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+/* Laptop */
+@media all and (max-width:1400px){
+
+    .col{
+        flex: 33.3%;
+        max-width: 33.3%;
+    }
+
+}
+
+
+/* iPad */
+@media all and (max-width:1024px){
+
+    .col{
+        flex: 50%;
+        max-width: 50%;
+    }
+    
+    nav{
+        flex-direction: column;
+    }
+
+    .navigation{
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .flex-item{
+        flex: 100%;
+    }
+
+    .image{
+        max-width: 50%;
+        height: auto;
+    }
+
+    .biglogo{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo{
+        margin: 0;
+    }
+}
+
+/* iPhone/Mobil */
+@media all and (max-width: 640px){
+
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .navigation, nav{
+        flex-direction: column;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .navigation a{
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid grey ;
+    }
+
+    .flex-item{
+        flex: 100%;
+    }
+
+    .image{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .logo{
+        align-self: flex-start;
+    }
+
+    .logo img{
+        height: 60px;
+        width: auto;
+    }
+
+    .hamburger{
+        align-self: flex-end;
+        display: initial;
+        position: absolute;
+        cursor: pointer;
+        font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .nav-toggle{
+        display: flex;
+        background: black;
+        width: 100%;
+    }
+
+
+}
