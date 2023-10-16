@@ -57,6 +57,6 @@ function createLink() {
 createLink();
 
 // Store data in localStorage
-localStorage.setItem("name", "John");
+localStorage.setItem("name", "Erik");
 
 // https://rapidapi.com/blog/movie-api/
